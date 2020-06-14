@@ -20,5 +20,5 @@ from django.conf.urls import url, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('floading.urls')),
-    path('',include('ping.urls'))
+    path('', include('ping.urls'))
 ]

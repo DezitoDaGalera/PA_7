@@ -16,6 +16,6 @@ import json
 def endereco_list_APIview(request):
     data_retriever = scraping.matcher()
     data = data_retriever.retrieve()
-    json_data = json.dumps(data,indent=4,sort_keys=True,ensure_ascii=False)
-    return Response(json_data,status=200,)
+    json_data = json.dumps(data,indent=4,ensure_ascii=False)
+    return Response(data,status=200,)
 
