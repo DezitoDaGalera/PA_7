@@ -11,8 +11,8 @@ class scraper:
     def text_scraper(self):
         
         final_text=""
-        #search = requests.get(r'https://www.cgesp.org/v3/alagamentos.jsp?dataBusca=10%2F02%2F2020&enviaBusca=Buscar')
-        search = requests.get(r"https://www.cgesp.org/v3/alagamentos.jsp")
+        search = requests.get(r'https://www.cgesp.org/v3/alagamentos.jsp?dataBusca=10%2F02%2F2020&enviaBusca=Buscar')
+        #search = requests.get(r"https://www.cgesp.org/v3/alagamentos.jsp")
 
         soup = BeautifulSoup(search.text, 'lxml')
 
