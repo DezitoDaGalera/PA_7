@@ -12,7 +12,7 @@ class scraper:
         
         final_text=""
 
-        search = requests.get(r"https://www.cgesp.org/v3/alagamentos.jsp")
+        search = requests.get(r"https://www.cgesp.org/v3/alagamentos.jsp?dataBusca=10%2F02%2F2020&enviaBusca=Buscar")
 
         soup = BeautifulSoup(search.text, 'lxml')
 
